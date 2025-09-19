@@ -1,0 +1,15 @@
+<div class="admin">
+  <header>
+    <h1>Panel de Administración</h1>
+  </header>
+
+  <nav>
+    <a [routerLink]="['horarios']" routerLinkActive="active">Cargar Horarios</a>
+    <a [routerLink]="['avisos']" routerLinkActive="active">Publicar Aviso</a>
+    <a [routerLink]="['/admin/login']" routerLinkActive="active">Salir</a>
+  </nav>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

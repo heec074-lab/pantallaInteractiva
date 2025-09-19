@@ -1,0 +1,26 @@
+<div class="login-container">
+  <div class="login-box">
+    <h2 class="login-title">Login Admin</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+      <div class="input-group">
+        <input type="text" formControlName="username" placeholder=" " />
+        <label>Usuario</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" formControlName="password" placeholder=" " />
+        <label>Contraseña</label>
+      </div>
+
+      <button type="submit" class="login-btn">
+        Ingresar
+      </button>
+    </form>
+    <button class="login-exit" (click)="goToPantalla()">
+      Volver a la pantalla
+    </button>
+  </div>
+</div>
+

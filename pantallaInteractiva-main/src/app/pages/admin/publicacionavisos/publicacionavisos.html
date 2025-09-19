@@ -1,0 +1,17 @@
+
+<div>
+    <h2> Publicación de Avisos </h2>
+<form [formGroup]="avisosForm" (ngSubmit)="onSubmit()">
+  <div class="input-group">
+    <input type="text" formControlName="titulo" placeholder=" " />
+    <label>Título del aviso</label>
+  </div>
+  <div class="input-group textarea-group">
+    <textarea formControlName="descripcion" placeholder=" "></textarea>
+    <label>Descripción</label>
+  </div>
+  <button type="submit" class="avisos-btn">
+    Publicar Aviso
+  </button>
+</form>
+</div>

@@ -1,0 +1,40 @@
+.pantalla-contenido {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: calc(100vh - 120px); 
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a); 
+}
+
+.tabla-horarios {
+  border-collapse: collapse;
+  width: 80%; 
+  text-align: center;
+  font-family: 'Orbitron', sans-serif; 
+  color: #fff;
+}
+
+.tabla-horarios th {
+  background-color: #0077ff; 
+  padding: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tabla-horarios td {
+  background-color: rgba(255, 255, 255, 0.05); 
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.tabla-horarios tr:nth-child(even) td {
+  background-color: rgba(243, 239, 239, 0.1); /* filas alternas */
+}
+
+.tabla-horarios tr:hover td {
+  background-color: #0360ec;
+  color: #fff;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
