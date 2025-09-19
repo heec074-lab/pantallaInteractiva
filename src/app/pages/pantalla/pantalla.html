@@ -1,0 +1,20 @@
+<main class="pantalla-contenido">
+  <table class="tabla-horarios">
+    <thead>
+      <tr>
+        <th>Profesor</th>
+        <th>Asignatura</th>
+        <th>Sala</th>
+        <th>Hora</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let clase of clases">
+        <td>{{ clase.profesor }}</td>
+        <td>{{ clase.asignatura }}</td>
+        <td>{{ clase.sala }}</td>
+        <td>{{ clase.hora }}</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
