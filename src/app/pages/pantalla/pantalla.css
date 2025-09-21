@@ -1,0 +1,54 @@
+.titulo {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.cargando {
+  text-align: center;
+  font-style: italic;
+  color: #4b5563;
+}
+
+.error {
+  text-align: center;
+  color: #dc2626; /* rojo */
+  font-weight: bold;
+}
+
+.lista-horarios {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.item-horario {
+  background: #f3f4f6; /* gris claro */
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+.item-horario:hover {
+  background: #e5e7eb; /* efecto hover */
+}
+
+.sigla {
+  font-weight: bold;
+  color: #111827;
+}
+
+.nombre {
+  color: #374151;
+}
+
+.id {
+  color: #6b7280;
+  font-size: 0.9em;
+}

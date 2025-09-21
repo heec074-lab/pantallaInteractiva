@@ -1,0 +1,87 @@
+/* Contenedor principal centrado */
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background: #f3f4f6; /* gris claro */
+}
+
+/* Caja principal */
+.upload-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Título */
+.upload-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor del input */
+.file-input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+/* Label que actúa como botón */
+.file-label {
+  display: inline-block;
+  background: #0055a5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.file-label:hover {
+  background: #0077ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Nombre del archivo */
+.file-name {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* Botón de subir */
+.upload-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #ffc20e;
+  color: #003366;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #ffd633;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.upload-btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}

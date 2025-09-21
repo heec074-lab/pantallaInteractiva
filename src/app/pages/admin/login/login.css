@@ -1,0 +1,121 @@
+/* Contenedor centrado */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f3f4f6; /* gris claro */
+}
+
+.login-box {
+  width: 100%;
+  max-width: 360px;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.login-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  background: #fefefe;
+}
+
+/* Efecto al enfocar */
+.input-group input:focus {
+  border-color: #0055a5;
+  box-shadow: 0 0 10px rgba(0,85,165,0.3);
+}
+
+/* Label flotante */
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1rem;
+  pointer-events: none;
+  background: #fff;
+  padding: 0 0.25rem;
+  transition: 0.3s ease all;
+}
+
+/* Label sube al escribir o al enfocar */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -0.6rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  color: #0055a5;
+}
+
+/* Botón estilizado */
+.login-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #0055a5;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-btn:hover {
+  background: #0077ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.login-exit {
+  width: 100%;
+  padding: 0.75rem;
+  background: #f3f4f6; 
+  color: #003366;       
+  font-weight: 600;
+  font-size: 1rem;
+  border: 2px solid #0055a5; 
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+}
+
+.login-exit:hover {
+  background: #0055a5;   
+  color: #fff;           
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
